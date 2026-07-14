@@ -7,25 +7,11 @@ public class EBlockSequence {
         Scanner sc = new Scanner(System.in);
         int t=sc.nextInt();
         while(t-->0){
-            int n = sc.nextInt();
-            String s = sc.next();
-
-            Stack<Integer> st = new Stack<>();
-            int components = 0;
-
-            for (char ch : s.toCharArray()) {
-                if (ch == '(') {
-                    st.push(1);
-                    components++;
-                } else {
-                    st.pop();
-                    if (!st.isEmpty()) {
-                        components--;
-                    }
-                }
-            }
-
-            System.out.println(components);
+           int n=sc.nextInt();
+           int arr[]=new int[n];
+           for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+           }
         }
     }
 }
